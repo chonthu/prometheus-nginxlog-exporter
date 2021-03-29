@@ -20,16 +20,16 @@ changelog:
 dockers:
   - dockerfile: .goreleaser.Dockerfile
     image_templates:
-    - quay.io/martinhelmich/prometheus-nginxlog-exporter:latest
-    - quay.io/martinhelmich/prometheus-nginxlog-exporter:stable
-    - quay.io/martinhelmich/prometheus-nginxlog-exporter:v{{ .Major }}
-    - quay.io/martinhelmich/prometheus-nginxlog-exporter:v{{ .Major }}.{{ .Minor }}
-    - quay.io/martinhelmich/prometheus-nginxlog-exporter:{{ .Tag }}
-    - docker.pkg.github.com/martin-helmich/prometheus-nginxlog-exporter/exporter:latest
-    - docker.pkg.github.com/martin-helmich/prometheus-nginxlog-exporter/exporter:stable
-    - docker.pkg.github.com/martin-helmich/prometheus-nginxlog-exporter/exporter:v{{ .Major }}
-    - docker.pkg.github.com/martin-helmich/prometheus-nginxlog-exporter/exporter:v{{ .Major }}.{{ .Minor }}
-    - docker.pkg.github.com/martin-helmich/prometheus-nginxlog-exporter/exporter:{{ .Tag }}
+    - quay.io/meppurathu/prometheus-nginxlog-exporter:latest
+    - quay.io/meppurathu/prometheus-nginxlog-exporter:stable
+    - quay.io/meppurathu/prometheus-nginxlog-exporter:v{{ .Major }}
+    - quay.io/meppurathu/prometheus-nginxlog-exporter:v{{ .Major }}.{{ .Minor }}
+    - quay.io/meppurathu/prometheus-nginxlog-exporter:{{ .Tag }}
+    - docker.pkg.github.com/chonthu/prometheus-nginxlog-exporter/exporter:latest
+    - docker.pkg.github.com/chonthu/prometheus-nginxlog-exporter/exporter:stable
+    - docker.pkg.github.com/chonthu/prometheus-nginxlog-exporter/exporter:v{{ .Major }}
+    - docker.pkg.github.com/chonthu/prometheus-nginxlog-exporter/exporter:v{{ .Major }}.{{ .Minor }}
+    - docker.pkg.github.com/chonthu/prometheus-nginxlog-exporter/exporter:{{ .Tag }}
     binaries:
       - prometheus-nginxlog-exporter
     goos: linux
